@@ -8,13 +8,37 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/application.js"></script>
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
-    
+    <container class="container-fluid">
+    <h1>Shopping Cart Calculator</h1>
+      <div>
+        <table>
+          <tr id="headers">
+            <td class="col-lg-5">Item</td>
+            <td class="col-lg-2">Price per Unit($)</td>
+            <td class="col-lg-1">Quantity</td>
+            <td class="col-lg-2">Subtotal($)</td>
+          </tr>
+          <tr id="input-row">
+            <td><input id="item-name" type="text" required="required" placeholder="Item Name"></td>
+            <td><input id="unit-price" type="number" required="required" placeholder="Price"></td>
+            <td><input id="quantity" type="number" required="required" placeholder="Quantity"></td>
+            <td><button id="add-button">Add Item</button></td>
+          </tr>
+          <tr>
+            <td class="col-lg-5">Total</td>
+            <td class="col-lg-2"></td>
+            <td id="total-quantity" class="col-lg-1">TBD</td>
+            <td id="total-price" class="col-lg-2">TBD</td>
+          </tr>
+        </table>
+      </div>
+    </container>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/application.js"></script>
   </body>
 </html>
